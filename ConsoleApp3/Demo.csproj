@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp1\GreenWhale.Mesframeworks.csproj" />
+    <ProjectReference Include="..\GreenWhale.Extensions.Mesframeworks\GreenWhale.Extensions.Mesframeworks.csproj" />
   </ItemGroup>
 
 </Project>

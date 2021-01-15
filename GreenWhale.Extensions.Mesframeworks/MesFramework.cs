@@ -2,35 +2,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
-using System.Net.Http;
 using System.Xml.Linq;
+using System.Net.Http;
 
 namespace GreenWhale.Mesframeworks
 {
-    public class TestItem : ITestItem
-    {
-        private string standard;
-        private string itemValue;
-        private string itemUnit;
-        private string condation;
-
-        public string ItemName { get; set; }
-        public string ItemValue { get { return itemValue == string.Empty ? "NA" : itemValue; } set => itemValue = value; }
-        public string ItemUnit { get { return itemUnit == string.Empty ? "NA" : itemUnit; } set => itemUnit = value; }
-        public string Condation { get { return condation == string.Empty ? "NA" : condation; } set => condation = value; }
-        public string Standard
-        {
-            get
-            {
-                if (standard == null)
-                {
-                    return ItemValue == string.Empty ? "NA" : ItemValue;
-                }
-                return standard;
-            }
-            set => standard = value;
-        }
-    }
     /// <summary>
     /// MES框架
     /// </summary>
