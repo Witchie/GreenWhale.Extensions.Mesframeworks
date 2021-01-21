@@ -7,6 +7,15 @@
         private string itemUnit;
         private string condation;
 
+        public TestItem(string itemName, string standard, string itemValue, string itemUnit="")
+        {
+            ItemName = itemName;
+            ItemValue = itemValue;
+            ItemUnit = itemUnit;
+            Condation = standard;
+            Standard = standard;
+        }
+
         public string ItemName { get; set; }
         public string ItemValue { get { return itemValue == string.Empty ? "NA" : itemValue; } set => itemValue = value; }
         public string ItemUnit { get { return itemUnit == string.Empty ? "NA" : itemUnit; } set => itemUnit = value; }
